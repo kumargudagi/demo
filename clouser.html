@@ -1,0 +1,13 @@
+<script type="text/javascript">
+var increamentclickcount = (function()
+   {
+   var clickcount=0;
+   return function(){
+    return ++clickcount;
+     }
+})();
+</script>
+<input type="button" value="click me" onclick="alert(increamentclickcount())"; />
+
+
+// A clouser is a inner function that has a access too the outer function's variables in additions to its own variables & global variables
